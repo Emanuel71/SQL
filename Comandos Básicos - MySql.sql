@@ -48,11 +48,11 @@ DE_FÉRIAS) VALUES (
 -- Selecionando apenas as colunas NOME e MATRICULA da tabela
 SELECT NOME, MATRICULA FROM tabela_de_vendedores;
 
--- Verificando a penas o cadastro da Vendedora Claudia
+-- Verificando apenas o cadastro da Vendedora Claudia
 SELECT * FROM tabela_de_vendedores WHERE NOME = 'Cláudia Morais';
 
 -- Verificando os vendedores que tenhas porcentagem maiores que 10%. 
--- Usando os comandos: BETWEEN, AND usado para achar numeros flutantes. 
+-- Usando o comando: BETWEEN - usado para achar numeros flutantes. 
 SELECT * FROM tabela_de_vendedores WHERE PERCENTUAL_COMISSÃO BETWEEN 0.09 AND 0.11;
 
 -- Verificando as vendedores que foram adimitido a partir de 2016
