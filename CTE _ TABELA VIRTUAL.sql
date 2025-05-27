@@ -1,6 +1,6 @@
 USE ContosoRetailDW;
 
--- CTE : CRIA«√O DE TABELA VIRTUAL 
+-- CTE : CRIA√á√ÉO DE TABELA VIRTUAL 
 WITH ANALISE_PRODUTOS(ANO, MES, ID_PRODUTOS, NOME_PRODUTOS, QTDE)
 AS 
 (
@@ -15,8 +15,8 @@ AS
 		ON p.ProductKey = s.ProductKey
 	GROUP BY DATEPART(YEAR,s.DateKey),DATEPART(MONTH, s.DateKey),p.ProductName, p.ProductKey
 )
--- ApÛs fazer a TB Virtual, temos que fazer um SELECT dessa TB
+-- Ap√≥s fazer a TB Virtual, temos que fazer um SELECT dessa TB
 SELECT 
   MAX(ID_PRODUTOS)
   ,MAX(QTDE)
-FROM ANALISE_PRODUTOS -- Usamos esse select para fazer analise mais espefica, apÛs a criaÁ„o dela 
+FROM ANALISE_PRODUTOS -- Usamos esse select para fazer analise mais espefica, ap√≥s a cria√ß√£o dela 
