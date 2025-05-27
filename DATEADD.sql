@@ -1,6 +1,6 @@
 USE ContosoRetailDW
 
--- DATEADD (intervalo, quantidade, coluna c/ date) : Usado para adicionar dias, meses e até anos
+-- DATEADD (intervalo, quantidade, coluna c/ date) : Usado para adicionar dias, meses e atÃ© anos
 
 SELECT 
 	 GETDATE() AS 'Hoje'
